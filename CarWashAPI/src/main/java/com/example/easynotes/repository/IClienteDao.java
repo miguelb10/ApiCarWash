@@ -6,4 +6,5 @@ import com.example.easynotes.model.Cliente;
 
 public interface IClienteDao extends CrudRepository<Cliente, Integer>{
 	Cliente findByEmailAndContrasenia(String Email, String Contrasenia);
+	Cliente findById(int id);
 }
