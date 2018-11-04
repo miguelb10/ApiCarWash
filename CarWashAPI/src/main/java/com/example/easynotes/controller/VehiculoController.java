@@ -1,6 +1,7 @@
 package com.example.easynotes.controller;
 
 import java.text.ParseException;
+import java.util.List;
 
 import javax.validation.Valid;
 
@@ -33,6 +34,10 @@ public class VehiculoController {
 		vehiculo.setEstado("ACTIVO");
 		vehiculo.setCliente(cliente);
 		return vehiculoDao.save(vehiculo);
+	}
+	@GetMapping("/vehiculo/cliente/{id}")
+	public List<Vehiculo> vehiculosByCliente(@PathVariable String id) {
+		return vehiculoDao.findByClienteId(Integer.parseInt(id));
 	}
 
 }
