@@ -1,4 +1,4 @@
-package com.example.easynotes.controller;
+package com.upc.controller;
 
 import java.text.ParseException;
 import java.util.List;
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.easynotes.model.Cliente;
-import com.example.easynotes.model.Vehiculo;
-import com.example.easynotes.repository.IClienteDao;
-import com.example.easynotes.repository.IVehiculoDao;
+import com.upc.model.Cliente;
+import com.upc.model.Vehiculo;
+import com.upc.repository.IClienteDao;
+import com.upc.repository.IVehiculoDao;
 
 @RestController
 @RequestMapping("/api")

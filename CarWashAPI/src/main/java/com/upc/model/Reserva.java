@@ -1,4 +1,4 @@
-package com.example.easynotes.model;
+package com.upc.model;
 
 import java.io.Serializable;
 import java.sql.Date;

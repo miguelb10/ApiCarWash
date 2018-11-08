@@ -1,4 +1,4 @@
-package com.example.easynotes.controller;
+package com.upc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 import java.text.ParseException;
-import com.example.easynotes.model.Cliente;
-import com.example.easynotes.repository.IClienteDao;
+
+import com.upc.model.Cliente;
+import com.upc.repository.IClienteDao;
 
 @RestController
 @RequestMapping("/api")

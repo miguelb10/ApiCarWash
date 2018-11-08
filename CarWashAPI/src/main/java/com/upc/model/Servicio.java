@@ -1,4 +1,4 @@
-package com.example.easynotes.model;
+package com.upc.model;
 
 import java.io.Serializable;
 
@@ -51,12 +51,12 @@ public class Servicio implements Serializable {
 		this.empresa = empresa;
 	}
 
-	public TipoServicio getTipoServicio() {
-		return tipoServicio;
+	public TipoServicio getTipo_servicio() {
+		return tipo_servicio;
 	}
 
-	public void setTipoServicio(TipoServicio tipoServicio) {
-		this.tipoServicio = tipoServicio;
+	public void setTipo_servicio(TipoServicio tipo_servicio) {
+		this.tipo_servicio = tipo_servicio;
 	}
 
 	public String getNombre() {

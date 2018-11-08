@@ -1,10 +1,10 @@
-package com.example.easynotes.repository;
+package com.upc.repository;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.example.easynotes.model.Vehiculo;
+import com.upc.model.Vehiculo;
 
 public interface IVehiculoDao extends CrudRepository<Vehiculo, Integer>{
 	
