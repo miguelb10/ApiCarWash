@@ -3,12 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.example</groupId>
-	<artifactId>easy-notes</artifactId>
+	<groupId>com.upc</groupId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>easy-notes</name>
+	<name>CarWashAPI</name>
 	<description>Rest API for a Simple Note Taking Application</description>
 
 	<parent>
@@ -61,4 +60,5 @@
 	</build>
 
 
+	<artifactId>CarWashAPI</artifactId>
 </project>
