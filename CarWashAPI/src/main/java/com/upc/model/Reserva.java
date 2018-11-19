@@ -1,7 +1,7 @@
 package com.upc.model;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -57,8 +57,8 @@ public class Reserva implements Serializable {
 		return fecha;
 	}
 
-	public void setFecha(Date fecha) {
-		this.fecha = fecha;
+	public void setFecha(Date sqlDate) {
+		this.fecha = sqlDate;
 	}
 
 	public String getEstado() {

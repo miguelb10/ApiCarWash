@@ -1,6 +1,9 @@
 package com.upc.controller;
 
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 import javax.validation.Valid;
 
@@ -38,6 +41,8 @@ public class ReservaController {
 	@PostMapping("/reserva/{idvehiculo}/{idservicio}/save")
 	public Reserva registrarReserva(@Valid @RequestBody Reserva reserva, @PathVariable String idvehiculo,
 			@PathVariable String idservicio) throws ParseException {
+
+
 		reserva.setEstado("Activo");
 		reserva.setVehiculo(vehiculoDao.findById(Integer.parseInt(idvehiculo)));
 		reserva.setServicio(servicioDao.findById(Integer.parseInt(idservicio)));
