@@ -31,7 +31,7 @@ public class Reserva implements Serializable {
 	private Servicio servicio;
 	private String comentario;
 	private float calificacion;
-	private int hora;
+	private String hora;
 
 	public Reserva() {
 		super();
@@ -94,11 +94,13 @@ public class Reserva implements Serializable {
 		this.calificacion = calificacion;
 	}
 
-	public int getHora() {
+	public String getHora() {
 		return hora;
 	}
 
-	public void setHora(int hora) {
+	public void setHora(String hora) {
 		this.hora = hora;
 	}
+
+	
 }

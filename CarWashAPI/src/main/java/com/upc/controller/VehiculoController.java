@@ -6,6 +6,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,9 +36,20 @@ public class VehiculoController {
 		vehiculo.setCliente(cliente);
 		return vehiculoDao.save(vehiculo);
 	}
+	
 	@GetMapping("/vehiculo/cliente/{id}")
 	public List<Vehiculo> vehiculosByCliente(@PathVariable String id) {
 		return vehiculoDao.findByClienteId(Integer.parseInt(id));
+	}
+	
+	@GetMapping("/vehiculo/{id}")
+	public Vehiculo getVehiculo(@PathVariable String id) {
+		return vehiculoDao.findById(Integer.parseInt(id));
+	}
+	
+	@DeleteMapping("/vehiculo/{id}/delete")
+	public void eliminarVehiculo(@PathVariable String id) {
+		vehiculoDao.deleteById(Integer.parseInt(id));
 	}
 
 }
